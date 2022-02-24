@@ -1,14 +1,16 @@
 import React from "react";
+import Button from "@mui/material/Button";
 
 function LoginButton(props) {
   return (
-    <input
-      type="submit"
-      value={props.text}
-      className={"form_input-button"}
-      id={props.id}
-      onClick={() => props.functionToDo()}
-    />
+    <Button
+      type={props.type}
+      fullWidth
+      variant="contained"
+      sx={{ mt: 3, mb: 2 }}
+    >
+      {props.text}
+    </Button>
   );
 }
 

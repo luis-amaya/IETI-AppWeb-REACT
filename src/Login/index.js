@@ -1,11 +1,10 @@
-import React from "react";
-import LoginUI from "./Components/LoginUI";
-import LogoSvg from "../Commons/Statics/img";
+import * as React from "react";
+import { LoginUI } from "./Components/LoginUI";
+import "./scss/Login.scss";
 
 function Login() {
   return (
-    <div className="Container" id="welcome-container">
-      <img className="imgsvg" src={LogoSvg} alt="IETI Login Logo" />
+    <div className="container" id="welcome-container">
       {<LoginUI />}
     </div>
   );

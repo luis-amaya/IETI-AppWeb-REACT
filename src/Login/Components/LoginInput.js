@@ -1,22 +1,18 @@
 import React from "react";
+import TextField from "@mui/material/TextField";
 
 function LoginInput(props) {
   return (
-    <div className="form_input">
-      <span className="form_input-icon">
-        <i className={props.icon}></i>
-      </span>
-      <input
-        type={props.type}
-        className="form_input-text"
-        aria-label={props.place}
-        placeholder={props.place}
-        id={props.id}
-        name={props.place}
-        value={props.value}
-        onChange={(ev) => props.functiontoDo(ev.target.value)}
-      />
-    </div>
+    <TextField
+      margin="normal"
+      required
+      fullWidth
+      id={props.id}
+      label={props.label}
+      name={props.name}
+      autoComplete={props.autocomplete}
+      autoFocus
+    />
   );
 }
 
